@@ -30,9 +30,20 @@ Ils sont particulièrement utilisés car plusieurs conteneurs peuvent tourner su
 # Etape 3:
 
 ## 1. Pourquoi un Dockerfile est-il préférable à la configuration manuelle d’un conteneur ?
-
 Il est plus rapide et plus pratique, si on a notre la configuration qui nous intéresse dans notre docker file, c'est beaucoup plus simple de l'utiliser que de le redéfinir à chaque fois.
 
 ## 2. Quelle différence existe entre une image Docker et un conteneur Docker ?
-
 Une image Docker est le fichier à partir duquel une instance Docker est créée. Une image est un fichier inerte alors qu'un conteneur Docker est du code virtualisé qui tourne.
+
+
+# Etape 4:
+
+## 1. Pourquoi Docker Compose est-il préférable au lancement manuel de plusieurs conteneurs ?
+Il est plus simple d'avoir Docker Compose qui lance automatiquement plusieurs conteneurs en fonction des ordres qu'on lui donne, plutôt que de lancer à la main 10 conteneurs qu'on aurait pu lancer d'un coup.
+
+## 2. Quel est le rôle du fichier "docker-compose.yml" ?
+Faire l'intermédiaire entre la volonté de l'utilisateur et Docker Compose. Donc en tant qu'user on décrit en yml ce qu'on voudrait que Docker Compose et il le fait. 
+
+## 3. Dans quels cas Docker Compose pourrait-il ses limites ?
+Point faible : trop fort.
+
