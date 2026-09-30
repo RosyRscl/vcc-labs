@@ -13,3 +13,14 @@ Une VM est une recréation d'une machine hébergeant des applications/services, 
 - Une VM à laquelle on accède à distance nécessite une bonne connexion à Internet pour pouvoir l'utiliser, une VM en local peut être lente et lourde
 - Une VM est plus portable: il est plus facile d'en faire un snapshot que de sauvegarder les paramètres d'un ordinateur personnel entier
 - Une VM nécessite un hyperviseur pour y accéder alors qu'un ordinateur se suffit à lui même
+
+
+# Etape 2:
+
+## 1. Expliquez, avec vos propres mots, ce qu’est un conteneur Docker.
+Un conteneur Docker est un software qui nécessite un OS, qui est plus léger qu'une VM et qui est issu d'un docker
+
+## 2. Quelle différence fondamentale existe entre une machine virtuelle et un conteneur ?
+Une VM nécessite seulement un hyperviseur alors qu'un conteneur nécessite un OS.
+
+## 3. Pourquoi les conteneurs sont-ils particulièrement adaptés au déploiement d’applications dans le Cloud ?
