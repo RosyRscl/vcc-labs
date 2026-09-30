@@ -18,9 +18,10 @@ Une VM est une recréation d'une machine hébergeant des applications/services, 
 # Etape 2:
 
 ## 1. Expliquez, avec vos propres mots, ce qu’est un conteneur Docker.
-Un conteneur Docker est un software qui nécessite un OS, qui est plus léger qu'une VM et qui est issu d'un docker
+Un conteneur Docker est un logiciel qui héberge un service et qui nécessite un OS, qui est plus léger qu'une VM et qui est issu d'une Docker image.
 
 ## 2. Quelle différence fondamentale existe entre une machine virtuelle et un conteneur ?
 Une VM nécessite seulement un hyperviseur alors qu'un conteneur nécessite un OS.
 
 ## 3. Pourquoi les conteneurs sont-ils particulièrement adaptés au déploiement d’applications dans le Cloud ?
+Ils sont particulièrement utilisés car plusieurs conteneurs peuvent tourner sur une même machine et donc bénéficier de son OS tout en restant isolés, ce qui évite de stocker inutilement plusieurs fois le même OS pour différentes applications/services sur le serveur.
