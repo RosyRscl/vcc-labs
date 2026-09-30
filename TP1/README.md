@@ -25,3 +25,14 @@ Une VM nécessite seulement un hyperviseur alors qu'un conteneur nécessite un O
 
 ## 3. Pourquoi les conteneurs sont-ils particulièrement adaptés au déploiement d’applications dans le Cloud ?
 Ils sont particulièrement utilisés car plusieurs conteneurs peuvent tourner sur une même machine et donc bénéficier de son OS tout en restant isolés, ce qui évite de stocker inutilement plusieurs fois le même OS pour différentes applications/services sur le serveur.
+
+
+# Etape 3:
+
+## 1. Pourquoi un Dockerfile est-il préférable à la configuration manuelle d’un conteneur ?
+
+Il est plus rapide et plus pratique, si on a notre la configuration qui nous intéresse dans notre docker file, c'est beaucoup plus simple de l'utiliser que de le redéfinir à chaque fois.
+
+## 2. Quelle différence existe entre une image Docker et un conteneur Docker ?
+
+Une image Docker est le fichier à partir duquel une instance Docker est créée. Une image est un fichier inerte alors qu'un conteneur Docker est du code virtualisé qui tourne.
