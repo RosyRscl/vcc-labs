@@ -33,4 +33,4 @@ De plus, la nature possiblement temporaire d'une VM favorise l'emploi d'une adre
 Ils sont indispensables car ce sont eux qui accordent l'accès à des ports de la VM via certains protocoles (qu'ils définissent également) depuis l'extérieur. Une adresse IP publique n'a aucun pouvoir sur quelles machines souhaitent interroger sa machine, pas plus qu'une adresse privée, et il est même indispensable, lorsque l'on dispose d'une adresse IP publique, d'en contrôler l'accès des ports afin que n'importe qui ne puisse pas y accéder sans invitation.
 
 ### 2. Décrivez le chemin parcouru par une requête HTTP envoyée depuis votre ordinateur jusqu’à l’application hello-api exécutée sur votre machine virtuelle.
-
+Ma requête passe par l'adresse privée de mon ordinateur, puis par le routeur wifi pour enfin atteindre une adresse publique grâce à un routeur. Ensuite cette adresse publique permet d'accèder dans l'internet à vpn-external. La requête arrive depuis vpn-external sur le routeur externe defaultrouter. defaultrouter le dirige vers le réseau net-discovery, qui le dirige enfin vers vm-discovery, notre machine virtuelle.
