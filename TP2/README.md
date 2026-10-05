@@ -26,3 +26,11 @@ L'adresse IP privée permet de communiquer avec les autres machines virtuelles d
 Pour faire une économie d'adresse IP publiques, elles ne poussent pas sur les arbres !
 De plus, la nature possiblement temporaire d'une VM favorise l'emploi d'une adresse IP privée, aisément modifiable.
 
+
+## Etape 3 :
+
+### 1. Pourquoi les Security Groups sont-ils indispensables même lorsqu’une machine virtuelle possède une adresse IP publique ?
+
+
+### 2. Décrivez le chemin parcouru par une requête HTTP envoyée depuis votre ordinateur jusqu’à l’application hello-api exécutée sur votre machine virtuelle.
+
