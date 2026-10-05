@@ -39,12 +39,12 @@ Ma requête passe par l'adresse privée de mon ordinateur, puis par le routeur w
 ## Etape 4 :
 
 ### 1. Quelles différences existe-il entre une image officielle et un snapshot ?
-Une image est une configuration "vierge" d'une VM, c'est à dire avec peu ou pas d'application par défaut, pas de données utilisateur (photos, documents personnels...) dedans.
-Un snapshot et une "capture d'écran" d'une instance d'une VM à un instant donné. Il peut donc contenir des applications installées par l'utilisateur, des documents personnels...
+Une image est une configuration "vierge" d'une machine, c'est à dire avec peu ou pas d'application par défaut, pas de données utilisateur (photos, documents personnels...) dedans, et pas d'accès prédéfinis.
+Un snapshot et une "capture d'écran" d'une instance d'une machine à un instant donné. Il peut donc contenir des applications installées par l'utilisateur, des documents personnels, des règles de sécurité/accès spécifiques...
 
 ### 2. Quels avantages apporte le redimensionnement d’une machine virtuelle dans un environnement Cloud ?
-Le redimensionnement permet d'adapter les ressources dont une VM dispose à son usage, du moment ou en général. Par exemple, une VM qui utilise constamment 10% des ressources qui lui sont allouées peut se voir réduire ses ressources afin de les réattribuer à une autre VM qui en aurait plus besoin. Au contraire, une VM qui utilise de plus en plus de ressources depuis un certain temps peut se voir attribuer plus de ressources afin de ne pas saturer.
+Le redimensionnement permet d'adapter les ressources dont une VM dispose à son usage du moment ou général. Par exemple, une VM qui utilise constamment 10% des ressources qui lui sont allouées peut se voir réduire ses ressources afin de les réattribuer à une autre VM qui en aurait plus besoin. Au contraire, une VM qui utilise de plus en plus de ressources depuis un certain temps peut se voir attribuer plus de ressources afin de ne pas saturer.
 
 ### 3. Dans quels contextes un administrateur système préférera-t-il créer une nouvelle machine à partir d’un snapshot plutôt que de repartir d’une image vierge ?
-Dans le cas où il a configuré une seule machine comme il le souhaite, par exemple avec les bons outils/configurations pour le service comptabilité, afin de pouvoir déployer directement les nombreuses machines avec les bons outils pour la comptabilité plutôt que de tout reconfigurer un par un, à l'identique, à la main, pour chaque machine.
-Dans le cas où une machine serait perdue/détruite/corrompue, s'il en existe un snapshot, l'administrateur peut utiliser le snapshot comme sauvegarde et restaurer la machine au point où elle en était au moment du snapshot, donc avant la perte/destruction/corruption mais après la configuration vierge.
+Dans le cas où il a configuré une seule machine comme il le souhaite, par exemple avec les bons outils/configurations pour le service comptabilité, afin de pouvoir déployer directement les nombreuses machines avec les bons outils pour la comptabilité plutôt que de tout reconfigurer un par un, à l'identique, "à la main" (ou avec des scripts), pour chaque machine.
+Dans le cas où une machine serait perdue/détruite/corrompue, s'il en existe un snapshot (avant incident), l'administrateur peut utiliser le snapshot comme sauvegarde et restaurer la machine au point où elle en était au moment du snapshot, donc avant la perte/destruction/corruption mais (bien) après la configuration vierge.
