@@ -34,3 +34,17 @@ Ils sont indispensables car ce sont eux qui accordent l'accès à des ports de l
 
 ### 2. Décrivez le chemin parcouru par une requête HTTP envoyée depuis votre ordinateur jusqu’à l’application hello-api exécutée sur votre machine virtuelle.
 Ma requête passe par l'adresse privée de mon ordinateur, puis par le routeur wifi pour enfin atteindre une adresse publique grâce à un routeur. Ensuite cette adresse publique permet d'accèder dans l'internet à vpn-external. La requête arrive depuis vpn-external sur le routeur externe defaultrouter. defaultrouter le dirige vers le réseau net-discovery, qui le dirige enfin vers vm-discovery, notre machine virtuelle.
+
+
+## Etape 4 :
+
+### 1. Quelles différences existe-il entre une image officielle et un snapshot ?
+Une image est une configuration "vierge" d'une VM, c'est à dire avec peu ou pas d'application par défaut, pas de données utilisateur (photos, documents personnels...) dedans.
+Un snapshot et une "capture d'écran" d'une instance d'une VM à un instant donné. Il peut donc contenir des applications installées par l'utilisateur, des documents personnels...
+
+### 2. Quels avantages apporte le redimensionnement d’une machine virtuelle dans un environnement Cloud ?
+Le redimensionnement permet d'adapter les ressources dont une VM dispose à son usage, du moment ou en général. Par exemple, une VM qui utilise constamment 10% des ressources qui lui sont allouées peut se voir réduire ses ressources afin de les réattribuer à une autre VM qui en aurait plus besoin. Au contraire, une VM qui utilise de plus en plus de ressources depuis un certain temps peut se voir attribuer plus de ressources afin de ne pas saturer.
+
+### 3. Dans quels contextes un administrateur système préférera-t-il créer une nouvelle machine à partir d’un snapshot plutôt que de repartir d’une image vierge ?
+Dans le cas où il a configuré une seule machine comme il le souhaite, par exemple avec les bons outils/configurations pour le service comptabilité, afin de pouvoir déployer directement les nombreuses machines avec les bons outils pour la comptabilité plutôt que de tout reconfigurer un par un, à l'identique, à la main, pour chaque machine.
+Dans le cas où une machine serait perdue/détruite/corrompue, s'il en existe un snapshot, l'administrateur peut utiliser le snapshot comme sauvegarde et restaurer la machine au point où elle en était au moment du snapshot, donc avant la perte/destruction/corruption mais après la configuration vierge.
