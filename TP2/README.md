@@ -30,7 +30,7 @@ De plus, la nature possiblement temporaire d'une VM favorise l'emploi d'une adre
 ## Etape 3 :
 
 ### 1. Pourquoi les Security Groups sont-ils indispensables même lorsqu’une machine virtuelle possède une adresse IP publique ?
-
+Ils sont indispensables car ce sont eux qui accordent l'accès à des ports de la VM via certains protocoles (qu'ils définissent également) depuis l'extérieur. Une adresse IP publique n'a aucun pouvoir sur quelles machines souhaitent interroger sa machine, pas plus qu'une adresse privée, et il est même indispensable, lorsque l'on dispose d'une adresse IP publique, d'en contrôler l'accès des ports afin que n'importe qui ne puisse pas y accéder sans invitation.
 
 ### 2. Décrivez le chemin parcouru par une requête HTTP envoyée depuis votre ordinateur jusqu’à l’application hello-api exécutée sur votre machine virtuelle.
 
