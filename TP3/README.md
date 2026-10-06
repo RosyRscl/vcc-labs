@@ -14,15 +14,15 @@ Le script configure les paramètres réseaux des VMs, installe Kubernetes, initi
 ## Etape 2 :
 
 ### 1. Quel est le rôle d’un Deployment dans Kubernetes ? Pourquoi ne déploie-t-on pas directement un Pod ?
-Un Deployment sert à indiquer à Kubernetes ce qu'il doit exécuter (image de conteneur, nombre de replicas...). Un Pod étant un réplica il ne peut pas se lancer tout seul car il ne sait pas où s'exécuter: c'est le rôle du Deployment de lui indiquer.
+Un Deployment sert à indiquer à Kubernetes ce qu'il doit exécuter (image de conteneur, nombre de replicas...). Un Pod étant un réplica il ne peut pas se lancer tout seul car il ne sait pas où s'exécuter: c'est le rôle du Deployment de le lui indiquer.
 
 ### 2. Quelle est la différence entre "port" et "targetPort" dans un Service ?
-port: permet une connexion avec l'extérieur
-targetPort: permet une connexion avec les Pods
+port: permet une connexion avec l'extérieur (ici 80).
+targetPort: permet une connexion avec les Pods (ici 5000).
 
 ### 3. Quelle est la différence entre une ressource Service et une ressource Ingress ? Quel problème chacune permet-elle de résoudre ?
-Une ressource Service est un point d'accès entre l'application Edge et Pods. Elle permet à l'application de communiquer avec les Pods du cluster.
-Une ressource Ingress est un point d'accès entre l'application Edge et Internet. Elle permet à l'application d'être accessible depuis l'extérieur.
+Une ressource Service est un point d'accès entre l'application Edge et les Pods. Elle permet à l'application Edge de communiquer avec les Pods du cluster.
+Une ressource Ingress est un point d'accès entre l'application Edge et Internet. Elle permet à l'application Edge d'être accessible depuis l'extérieur.
 
 ### 4. Dans l’architecture actuelle, on trouve les ports 80, 5000 et 30080. Quel est le rôle de chacun ?
 Le port 80 permet à une machine externe de se connecter à Kubernetes.
