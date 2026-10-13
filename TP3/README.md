@@ -27,7 +27,7 @@ Une ressource Ingress est un point d'accès entre l'application Edge et Internet
 ### 4. Dans l’architecture actuelle, on trouve les ports 80, 5000 et 30080. Quel est le rôle de chacun ?
 Le port 80 permet à une machine externe de se connecter à Kubernetes.
 Le port 5000 permet à Kubernetes de communiquer avec les Pods.
-Le port 30080 permet une connexion entre Traefik et Kubernetes.
+Le port 30080 permet une connexion entre Traefik et Kubernetes, c'est le port ouvert sur internet.'
 
 ## Etape 3 :
 
@@ -35,3 +35,5 @@ Le port 30080 permet une connexion entre Traefik et Kubernetes.
 ### — les VM et leurs adresses IP
 ### — les Pods et leurs applications conteneurisées
 ### — les adresses IP et ports utilisés par les ressources Kubernetes.
+
+![Diagramme de l'architectur'](./architecture_tp3.svg)
